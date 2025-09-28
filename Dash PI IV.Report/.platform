@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Dash PI IV"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c9abcd6f-53e9-4c20-8480-7290ef6060f2"
+  }
+}

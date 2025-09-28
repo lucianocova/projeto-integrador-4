@@ -1,0 +1,185 @@
+table 202506Segmentos_Consolidados
+	lineageTag: 0be85e8e-602b-474a-8688-4e9135f7e491
+
+	column #Nome_da_Administradora
+		dataType: string
+		lineageTag: ade4f205-b6ed-4707-93c2-3fb9e0f96c25
+		summarizeBy: none
+		sourceColumn: #Nome_da_Administradora
+
+		annotation SummarizationSetBy = Automatic
+
+	column CNPJ_da_Administradora
+		dataType: string
+		lineageTag: 85676f38-7fb8-48ea-9db9-6069b67eb1c3
+		summarizeBy: none
+		sourceColumn: CNPJ_da_Administradora
+
+		annotation SummarizationSetBy = Automatic
+
+	column Data_base
+		dataType: string
+		lineageTag: d3e9f7bd-3317-4a48-8282-83bb0b3fecef
+		summarizeBy: none
+		sourceColumn: Data_base
+
+		annotation SummarizationSetBy = Automatic
+
+	column Código_do_segmento
+		dataType: string
+		lineageTag: d6abc623-08e1-4eb6-bd77-25ef363e85cf
+		summarizeBy: none
+		sourceColumn: Código_do_segmento
+
+		annotation SummarizationSetBy = Automatic
+
+	column Taxa_de_administração
+		dataType: double
+		lineageTag: e70e489e-ed25-4db4-b5cb-9acf36973bec
+		summarizeBy: sum
+		sourceColumn: Taxa_de_administração
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Quantidade_de_grupos_ativos
+		dataType: int64
+		formatString: 0
+		lineageTag: 4d1ab6fb-bd69-4345-bea5-52f34b4d5b28
+		summarizeBy: sum
+		sourceColumn: Quantidade_de_grupos_ativos
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantidade_de_grupos_constituídos_no_mês
+		dataType: int64
+		formatString: 0
+		lineageTag: ac52434d-6f16-4221-93f1-e74b83f522f5
+		summarizeBy: sum
+		sourceColumn: Quantidade_de_grupos_constituídos_no_mês
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantidade_de_grupos_encerrados_no_mês
+		dataType: int64
+		formatString: 0
+		lineageTag: e416e7b4-e4f3-45cf-81c2-ce6297cf566a
+		summarizeBy: sum
+		sourceColumn: Quantidade_de_grupos_encerrados_no_mês
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantidade_de_cotas_comercializadas_no_mês
+		dataType: int64
+		formatString: 0
+		lineageTag: d43305cd-81c7-4948-bef9-ad6f3da9d446
+		summarizeBy: sum
+		sourceColumn: Quantidade_de_cotas_comercializadas_no_mês
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantidade_de_cotas_excluídas_a_comercializar
+		dataType: int64
+		formatString: 0
+		lineageTag: 556c2b19-5440-432b-ba71-33b737fa79cc
+		summarizeBy: sum
+		sourceColumn: Quantidade_de_cotas_excluídas_a_comercializar
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantidade_acumulada_de_cotas_ativas_contempladas
+		dataType: int64
+		formatString: 0
+		lineageTag: f988d323-9a70-4554-b711-4ffdf01f5101
+		summarizeBy: sum
+		sourceColumn: Quantidade_acumulada_de_cotas_ativas_contempladas
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantidade_de_cotas_ativas_não_contempladas
+		dataType: int64
+		formatString: 0
+		lineageTag: b616937b-789c-4b23-94e4-46e3e9872682
+		summarizeBy: sum
+		sourceColumn: Quantidade_de_cotas_ativas_não_contempladas
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantidade_de_cotas_ativas_contempladas_no_mês
+		dataType: int64
+		formatString: 0
+		lineageTag: 891c97e6-351f-4864-97da-b95003089ad3
+		summarizeBy: sum
+		sourceColumn: Quantidade_de_cotas_ativas_contempladas_no_mês
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantidade_de_cotas_ativas_em_dia
+		dataType: int64
+		formatString: 0
+		lineageTag: bad29aac-13be-4827-ac8c-7b54d2fb5a14
+		summarizeBy: sum
+		sourceColumn: Quantidade_de_cotas_ativas_em_dia
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantidade_de_cotas_ativas_contempladas_inadimplentes
+		dataType: int64
+		formatString: 0
+		lineageTag: 3372e71e-792e-4807-b7ca-e6f440e75d14
+		summarizeBy: sum
+		sourceColumn: Quantidade_de_cotas_ativas_contempladas_inadimplentes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantidade_de_cotas_ativas_não_contempladas_inadimplentes
+		dataType: int64
+		formatString: 0
+		lineageTag: 3b4c106b-7f40-4a40-be1f-cb79cee651a7
+		summarizeBy: sum
+		sourceColumn: Quantidade_de_cotas_ativas_não_contempladas_inadimplentes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantidade_de_cotas_excluídas
+		dataType: int64
+		formatString: 0
+		lineageTag: 899af7a2-7d30-415e-ab68-170386a66f51
+		summarizeBy: sum
+		sourceColumn: Quantidade_de_cotas_excluídas
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantidade_de_cotas_ativas_quitadas
+		dataType: int64
+		formatString: 0
+		lineageTag: 007bedbf-eeec-40e0-9350-8c07d9352303
+		summarizeBy: sum
+		sourceColumn: Quantidade_de_cotas_ativas_quitadas
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantidade_de_cotas_ativas_com_crédito_pendente_de_utilização
+		dataType: int64
+		formatString: 0
+		lineageTag: 96b343b8-f321-424a-831d-2e9df91cc1b7
+		summarizeBy: sum
+		sourceColumn: Quantidade_de_cotas_ativas_com_crédito_pendente_de_utilização
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 202506Segmentos_Consolidados = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\leite\OneDrive - Univesp Acadêmico\PI IV\projeto-integrador-4\banco de dados\202506Consorcios\202506Segmentos_Consolidados.csv"),[Delimiter=";", Columns=19, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"#Nome_da_Administradora", type text}, {"CNPJ_da_Administradora", type text}, {"Data_base", type text}, {"Código_do_segmento", type text}, {"Taxa_de_administração", type number}, {"Quantidade_de_grupos_ativos", Int64.Type}, {"Quantidade_de_grupos_constituídos_no_mês", Int64.Type}, {"Quantidade_de_grupos_encerrados_no_mês", Int64.Type}, {"Quantidade_de_cotas_comercializadas_no_mês", Int64.Type}, {"Quantidade_de_cotas_excluídas_a_comercializar", Int64.Type}, {"Quantidade_acumulada_de_cotas_ativas_contempladas", Int64.Type}, {"Quantidade_de_cotas_ativas_não_contempladas", Int64.Type}, {"Quantidade_de_cotas_ativas_contempladas_no_mês", Int64.Type}, {"Quantidade_de_cotas_ativas_em_dia", Int64.Type}, {"Quantidade_de_cotas_ativas_contempladas_inadimplentes", Int64.Type}, {"Quantidade_de_cotas_ativas_não_contempladas_inadimplentes", Int64.Type}, {"Quantidade_de_cotas_excluídas", Int64.Type}, {"Quantidade_de_cotas_ativas_quitadas", Int64.Type}, {"Quantidade_de_cotas_ativas_com_crédito_pendente_de_utilização", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

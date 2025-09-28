@@ -1,0 +1,49 @@
+table 202412Doc_4110_Consorcios_Administradoras
+	lineageTag: 2a780981-2d96-4605-9b1b-81995ca496dd
+
+	column #Data_base
+		dataType: string
+		lineageTag: d50c0432-5b2c-4b52-97ac-f0452c494954
+		summarizeBy: none
+		sourceColumn: #Data_base
+
+		annotation SummarizationSetBy = Automatic
+
+	column Documento
+		dataType: string
+		lineageTag: 649a9794-5171-4a07-bf15-bf49016b20d7
+		summarizeBy: none
+		sourceColumn: Documento
+
+		annotation SummarizationSetBy = Automatic
+
+	column CNPJ_da_Administradora
+		dataType: string
+		lineageTag: 01e4c4b0-e75d-4924-aacc-ad89dd7d5525
+		summarizeBy: none
+		sourceColumn: CNPJ_da_Administradora
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nome_da_Administradora
+		dataType: string
+		lineageTag: c8a02f05-816f-4b27-b59f-db19a0514135
+		summarizeBy: none
+		sourceColumn: Nome_da_Administradora
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 202412Doc_4110_Consorcios_Administradoras = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\leite\OneDrive - Univesp Acadêmico\PI IV\projeto-integrador-4\banco de dados\202412Consorcios_ADM\202412Doc_4110_Consorcios_Administradoras.csv"),[Delimiter=";", Columns=4, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"#Data_base", type text}, {"Documento", type text}, {"CNPJ_da_Administradora", type text}, {"Nome_da_Administradora", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

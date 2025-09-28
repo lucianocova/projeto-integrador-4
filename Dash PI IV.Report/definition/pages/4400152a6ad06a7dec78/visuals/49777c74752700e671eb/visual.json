@@ -1,0 +1,122 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "name": "49777c74752700e671eb",
+  "position": {
+    "x": 27.822014051522249,
+    "y": 19.391100702576111,
+    "z": 1,
+    "height": 340.60889929742387,
+    "width": 693.02107728337239,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Segmentos"
+                    }
+                  },
+                  "Property": "Segmento"
+                }
+              },
+              "queryRef": "Dim_Segmentos.Segmento",
+              "nativeQueryRef": "Segmento",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "202506Consorcios_UF"
+                        }
+                      },
+                      "Property": "Quantidade_de_consorciados_ativos_contemplados_por_lance"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(202506Consorcios_UF.Quantidade_de_consorciados_ativos_contemplados_por_lance)",
+              "nativeQueryRef": "Soma de Quantidade_de_consorciados_ativos_contemplados_por_lance"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "202506Consorcios_UF"
+                      }
+                    },
+                    "Property": "Quantidade_de_consorciados_ativos_contemplados_por_lance"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "2a61689a8201e62a1300",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "202506Consorcios_UF"
+                  }
+                },
+                "Property": "Quantidade_de_consorciados_ativos_contemplados_por_lance"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "644ffa56dd586620005a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Segmentos"
+              }
+            },
+            "Property": "Segmento"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}
